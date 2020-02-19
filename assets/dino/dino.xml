@@ -1,0 +1,26 @@
+<TextureAtlas imagePath="dino.png">
+	<SubTexture name="dino1.png" x="0" y="1205" width="340" height="236"/>
+	<SubTexture name="dino10.png" x="690" y="964" width="340" height="236"/>
+	<SubTexture name="dino11.png" x="690" y="723" width="340" height="236"/>
+	<SubTexture name="dino12.png" x="690" y="482" width="340" height="236"/>
+	<SubTexture name="dino13.png" x="690" y="241" width="340" height="236"/>
+	<SubTexture name="dino14.png" x="690" y="0" width="340" height="236"/>
+	<SubTexture name="dino15.png" x="345" y="1687" width="340" height="236"/>
+	<SubTexture name="dino16.png" x="345" y="1446" width="340" height="236"/>
+	<SubTexture name="dino17.png" x="345" y="1205" width="340" height="236"/>
+	<SubTexture name="dino18.png" x="345" y="964" width="340" height="236"/>
+	<SubTexture name="dino19.png" x="690" y="1687" width="340" height="236"/>
+	<SubTexture name="dino2.png" x="0" y="964" width="340" height="236"/>
+	<SubTexture name="dino20.png" x="345" y="482" width="340" height="236"/>
+	<SubTexture name="dino21.png" x="345" y="241" width="340" height="236"/>
+	<SubTexture name="dino22.png" x="345" y="0" width="340" height="236"/>
+	<SubTexture name="dino23.png" x="0" y="1687" width="340" height="236"/>
+	<SubTexture name="dino24.png" x="0" y="1446" width="340" height="236"/>
+	<SubTexture name="dino3.png" x="0" y="723" width="340" height="236"/>
+	<SubTexture name="dino4.png" x="0" y="482" width="340" height="236"/>
+	<SubTexture name="dino5.png" x="0" y="241" width="340" height="236"/>
+	<SubTexture name="dino6.png" x="0" y="0" width="340" height="236"/>
+	<SubTexture name="dino7.png" x="345" y="723" width="340" height="236"/>
+	<SubTexture name="dino8.png" x="690" y="1446" width="340" height="236"/>
+	<SubTexture name="dino9.png" x="690" y="1205" width="340" height="236"/>
+</TextureAtlas>

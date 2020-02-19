@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="sprites.png">
+	<SubTexture name="dino1.png" x="1380" y="0" width="440" height="432"/>
+	<SubTexture name="dino2.png" x="2070" y="482" width="440" height="472"/>
+	<SubTexture name="dino3.png" x="2070" y="0" width="440" height="472"/>
+	<SubTexture name="dino4.png" x="1380" y="482" width="440" height="472"/>
+	<SubTexture name="dino5.png" x="2760" y="0" width="440" height="472"/>
+	<SubTexture name="dino6.png" x="690" y="482" width="440" height="472"/>
+	<SubTexture name="dino7.png" x="690" y="0" width="440" height="472"/>
+	<SubTexture name="dino8.png" x="0" y="482" width="440" height="472"/>
+	<SubTexture name="dino9.png" x="0" y="0" width="440" height="472"/>
+</TextureAtlas>

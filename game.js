@@ -11,7 +11,6 @@ export default class Game extends Phaser.Scene {
     }
 
     this.load.atlasXML('dino','assets/dino/sprites.png', 'assets/dino/sprites.xml');
-  
     
   }
 
@@ -23,32 +22,18 @@ export default class Game extends Phaser.Scene {
     let center_height = this.sys.game.config.height/2;
   
     this.mundo2 = this.add.tileSprite(center_width, center_height,1280,960,"mundo2");
-   
+    this.add.image(200, 900 , 'skeleton');
     this.plataforms = this.physics.add.staticGroup();
     this.plataforms.create(100, 400 , 'bush1');
-   
     this.plataforms.create(800, 400 , 'cactus1');
-  
     this.plataforms.create(100, 800 , 'cactus2');
-      
     this.plataforms.create(600, 600 , 'cactus3');
-  
     this.plataforms.create(600, 100 , 'crate');
-       
     this.plataforms.create(200, 800 , 'grass');
-    
     this.plataforms.create(300, 400 , 'signArrow');
-     
-   
-    this.add.image(200, 900 , 'skeleton');
-    
     this.plataforms.create(0, 0 , 'stoneblock');
-    
     this.plataforms.create(1000, 100 , 'tree');
-    
-
-    this.plataforms.create(60, posx+100 , '1').refreshBody();
-   this.plataforms.create(188, posx+100 , '2').refreshBody();
+    this.plataforms.create(60, posx+100 , '1').refreshBody();this.plataforms.create(188, posx+100 , '2').refreshBody();
     this.plataforms.create(316, posx+100 , '2').refreshBody();
     this.plataforms.create(444, posx+100 , '2').refreshBody();
     this.plataforms.create(572, posx+100 , '2').refreshBody();
@@ -63,31 +48,11 @@ export default class Game extends Phaser.Scene {
     this.plataforms.create(348, 600 , '16').setScale(0.5);
 
    
-    this.dino = this.physics.add.sprite(500,100,'dino');
-    //this.dinojump = this.physics.add.sprite(500,100,'jump');
- 
+    this.dino = this.physics.add.sprite(300,posx,'dino');
     this.dino.setBounce(0.2);
     this.dino.setScale(0.2);
     this.dino.setCollideWorldBounds(true);
     
-    this.anims.create({
-      
-      key: 'left',
-      frames: this.anims.generateFrameNames('dino', { 
-        prefix: "dino",
-        suffix:".png",
-        start:1,
-        end: 8
-      }),
-      frameRate: 10,
-      repeat: -1
-  });
-  
- /*this.anims.create({
-      key: 'turn',
-      frames: [ { key: 'dino', frame: 9 } ],
-      frameRate: 20
-  });*/
   this.anims.create({
     key: 'turn',
     frames: this.anims.generateFrameNames('dino', { 
@@ -98,35 +63,21 @@ export default class Game extends Phaser.Scene {
     frameRate: 10,
     repeat: -1
 });
-
-    this.anims.create({
-      key: 'right',
-      frames: this.anims.generateFrameNames('dino', { 
-        prefix: "dino",
-        suffix:".png",
-        start:1,
-        end: 8
-       }),
-      frameRate: 10,
-      repeat: -1
-  });
-
   this.anims.create({
-    key: 'jump',
-    frames: this.anims.generateFrameNames('jump', { 
+    key: 'run',
+    frames: this.anims.generateFrameNames('dino', { 
       prefix: "dino",
       suffix:".png",
-      start:10,
-      end: 19
-     }),
+      start:1,
+      end: 8
+       }),
     frameRate: 10,
     repeat: -1
-});
+  });
 
- 
-    this.cursors = this.input.keyboard.createCursorKeys();
-    this.physics.add.collider(this.dino, this.plataforms);
-    console.log(this.cursors);
+  this.cursors = this.input.keyboard.createCursorKeys();
+  this.physics.add.collider(this.dino, this.plataforms);
+
   }
 
   update(time, delta) {   
@@ -135,14 +86,14 @@ export default class Game extends Phaser.Scene {
       this.dino.flipX=false;
         this.dino.setVelocityX(160);
 
-        this.dino.anims.play('right', true);
+        this.dino.anims.play('run', true);
     }
    else if (  this.cursors.left.isDown)
     {
       this.dino.flipX=true;
       this.dino.setVelocityX(-160);
 
-      this.dino.anims.play('left', true);
+      this.dino.anims.play('run', true);
     }
   else
   {

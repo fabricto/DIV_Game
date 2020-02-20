@@ -11,10 +11,14 @@ export default class Game extends Phaser.Scene {
     }
 
     this.load.atlasXML('dino','assets/dino/sprites.png', 'assets/dino/sprites.xml');
-    
+/** 
+    this.load.image('tiles', 'assets/kenney_redux_64x64.png');
+    this.load.tilemapTiledJSON('mundo', 'assets/map2.json');
+    */
   }
 
   create() {
+    //coordenadas 
     let posy =200; 
     let final =this.sys.game.config.width;
     let posx= this.sys.game.config.height-100;
@@ -22,6 +26,10 @@ export default class Game extends Phaser.Scene {
     let center_height = this.sys.game.config.height/2;
   
     this.mundo2 = this.add.tileSprite(center_width, center_height,1280,960,"mundo2");
+/**
+    this.map = this.add.tilemap('mundo');
+    this.tiles = this.map.addTilesetImage("dino_platformer","tiles");
+ */
     this.add.image(200, 900 , 'skeleton');
     this.plataforms = this.physics.add.staticGroup();
     this.plataforms.create(100, 400 , 'bush1');
@@ -33,7 +41,8 @@ export default class Game extends Phaser.Scene {
     this.plataforms.create(300, 400 , 'signArrow');
     this.plataforms.create(0, 0 , 'stoneblock');
     this.plataforms.create(1000, 100 , 'tree');
-    this.plataforms.create(60, posx+100 , '1').refreshBody();this.plataforms.create(188, posx+100 , '2').refreshBody();
+    this.plataforms.create(60, posx+100 , '1').refreshBody();
+    this.plataforms.create(188, posx+100 , '2').refreshBody();
     this.plataforms.create(316, posx+100 , '2').refreshBody();
     this.plataforms.create(444, posx+100 , '2').refreshBody();
     this.plataforms.create(572, posx+100 , '2').refreshBody();
@@ -42,13 +51,13 @@ export default class Game extends Phaser.Scene {
     this.plataforms.create(956, posx+100 , '2').refreshBody();
     this.plataforms.create(1084, posx+100 , '2').refreshBody();
     this.plataforms.create(final-60, posx+100, '3').refreshBody();
-
     this.plataforms.create(100, 600 , '14').setScale(0.5);
     this.plataforms.create(220, 600 , '15').setScale(0.5);
     this.plataforms.create(348, 600 , '16').setScale(0.5);
 
-   
+   //personaje
     this.dino = this.physics.add.sprite(300,posx,'dino');
+    this.adornos = this.add.sprite('adornos');
     this.dino.setBounce(0.2);
     this.dino.setScale(0.2);
     this.dino.setCollideWorldBounds(true);

@@ -18,17 +18,16 @@ DESCRIPCIÓN DEL JUEGO
 Juego 2D, scroll fijo
 
 DINÁMICA DEL JUEGO
-
+Plataforma 2d en el que el objetivo es llegar hasta la llave que contiene el nivel para poder acceder al siguiente. Durante el nivel habrá enemigos y obstáculos que dificultarán el camino.
 
 MECÁNICA DEL JUEGO
 Avanzar izquierda/derecha
 Saltar
-PowerUp
+Coger objetos (vida, llaves,...)
 
 PERSONAJES
 Principal: Dino
-Villano: 
-Persona a rescatar:
+Villanos: dinosaurios, meteoritos,...
 
 CONTROLES
 Up/W: saltar
@@ -36,5 +35,6 @@ left/A: avanzar hacia la izquierda
 right/D: avanzar hacia la derecha
 
 ITEMS
-Carne: recuperar vida
+Carne: recuperar vida.
+Llave: permite acceder al siguiente nivel.
 

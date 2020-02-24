@@ -8,7 +8,7 @@ CONCEPTO
     Plataforma: Web
     //Versión: 1 12/02/2020
     Sinopsis de Jugabilidad y Contenido: 
-        El juego consiste en ir avanzando verticarmente a lo largo del nivel con el fin de rescatar al prisionero.
+        El juego consiste en ir avanzando verticalmente a lo largo del nivel con el fin de rescatar al prisionero.
     Licencia:
     Publico: Mayores de 3 años
     Modos de juego: Single player

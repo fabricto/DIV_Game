@@ -4,7 +4,7 @@ export default class Game extends Phaser.Scene {
   }
   preload() {
     this.nombres = ["mundo2", "bush1", "cactus1", "cactus2", "cactus3", "crate", "grass", "signArrow", "skeleton", "stone", "stoneblock", "tree", "1", "2", "3", "14", "15", "16"];
-    this.dir = ["BG.png", "Objects/Bush1.png", "Objects/Cactus1.png", "Objects/Cactus2.png", "Objects/Cactus3.png", "Objects/Crate.png", "Objects/Grass2.png", "Objects/SignArrow.png", "Objects/Skeleton.png", "Objects/Stone.png", "Objects/StoneBlock.png", "Objects/Tree.png", "Tile/1.png", "Tile/2.png", "Tile/3.png", "Tile/14.png", "Tile/15.png", "Tile/16.png"];
+    this.dir = ["BG.png", "Objects/Bush1.png", "Objects/Cactus1.png", "Objects/Cactus2.png", "Objects/Cactus3.png", "Objects/Crate.png", "Objects/Grass2.png", "Objects/SignArrow.png", "Objects/Skeleton.png", "Objects/Stone.png", "Objects/StoneBlock.png", "Objects/Tree.png", "Objects/1.png", "Objects/2.png", "Objects/3.png", "Objects/14.png", "Objects/15.png", "Objects/16.png"];
 
     for (var i = 0; i < this.nombres.length; i++) {
       this.load.image(this.nombres[i], "assets/mundo2/" + this.dir[i]);

@@ -4,4 +4,4 @@ Algunos de los sitios donde sacaremos dichos assets son:
 https://www.gameart2d.com/free-dino-sprites.html
 https://pixel-frog.itch.io
 
-El estilo artistico que se ha decido para nuestro proyecto es cartoon
+El estilo artístico que se ha decido para nuestro proyecto es cartoon

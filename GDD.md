@@ -1,14 +1,14 @@
 
 CONCEPTO    
-    Título: Dino
+    Título: The Cave
     Género: Plataforma
     Diseñadores:
         Fabricio Torres Samueza
         Sergio Mellado Ordoñez
     Plataforma: Web
-    //Versión: 1 12/02/2020
+    //Versión: 2 14/04/2020
     Sinopsis de Jugabilidad y Contenido: 
-        El juego consiste en ir avanzando verticalmente a lo largo del nivel con el fin de rescatar al prisionero.
+        El juego consistirá en superar una serie de obstáculos para llegar a un portal que te lleve al siguiente nivel.
     Licencia:
     Publico: Mayores de 3 años
     Modos de juego: Single player
@@ -18,23 +18,23 @@ DESCRIPCIÓN DEL JUEGO
 Juego 2D, scroll fijo
 
 DINÁMICA DEL JUEGO
-Plataforma 2d en el que el objetivo es llegar hasta la llave que contiene el nivel para poder acceder al siguiente. Durante el nivel habrá enemigos y obstáculos que dificultarán el camino.
+El objetivo es llegar hasta el portal que te teletransporta al siguiente nivel. Durante el nivel habrá obstáculos que dificultarán el camino y objetos que aumentarán la puntuación de tu partida.
 
 MECÁNICA DEL JUEGO
-Avanzar izquierda/derecha
-Saltar
-Coger objetos (vida, llaves,...)
+Recolección de objetos.
+Acumulación de puntos.
+Progresión y superación de niveles.
 
 PERSONAJES
-Principal: Dino
-Villanos: dinosaurios, meteoritos,...
+Principal: Virtual Guy
 
 CONTROLES
-Up/W: saltar
-left/A: avanzar hacia la izquierda
-right/D: avanzar hacia la derecha
+Up: saltar
+left: avanzar hacia la izquierda (si estás en una pared saltas)
+right: avanzar hacia la derecha (si estás en una pared saltas)
 
 ITEMS
-Carne: recuperar vida.
-Llave: permite acceder al siguiente nivel.
+Frutas: te añaden puntos a tu partida.
 
+REFERENCIAS
+Donkey Kong (1981) y Super Meat Boy.

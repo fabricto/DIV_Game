@@ -1,32 +1,23 @@
-import Mundo1 from './mundo1.js';
 export default class Menu extends Phaser.Scene {
-  constructor() {
-    super({ key: 'Menu', });
-  }
+    constructor() {
+        super({ key: 'Menu' });
+    }
 
-  preload() {
-    this.load.image('boton', './assets/btn.png');
-    this.load.spritesheet('virtual_guy', './assets/virtualguy.png', { frameWidth: 32, frameHeight: 32 });
-  }
+    preload() {
+        this.load.image('boton', './assets/btn.png');
+        this.load.image('inicio', './assets/mapas/inicio.png');
+        this.load.image('titulo', './assets/mapas/titulo.png');
+        this.load.image('fondomenu', './assets/mapas/Purple.png');
+    }
 
-  create() {
-    this.width = this.sys.game.config.width;
-    this.height = this.sys.game.config.height;
-    this.boton = this.add.image(this.width / 2, this.height / 2, 'boton').setInteractive();
-    this.boton.setScale(0.5);
-    this.boton.on('pointerdown', () => this.scene.start('Mundo1'));
-    this.iniciar = this.add.text(this.width / 2, this.height / 2 - 40, 'Iniciar Juego').setOrigin(0.5);
-    this.titulo = this.add.text(this.width / 2, this.height / 6, 'The cave').setOrigin(0.5);
-    this.guy = this.physics.add.sprite(this.width / 5, this.height / 2, 'virtual_guy').setScale(2);
-    this.anims.create({
-      key: 'guy_menu',
-      frames: this.anims.generateFrameNumbers('virtual_guy', {
-        start: 0,
-        end: 43
-      }),
-      repeat: -1,
-      frameRate: 15
-    });
-    this.guy.anims.play('guy_menu', true);
-  }
+    create() {
+        this.width = this.sys.game.config.width;
+        this.height = this.sys.game.config.height;
+        this.fondoMenu = this.add.image(this.width / 2, this.height / 2, 'fondomenu').setOrigin(0.5).setScale(1.3);
+        this.imageninicio = this.add.image(this.width / 2, this.height / 2, 'inicio').setOrigin(0.5).setScale(1.75);
+        this.titulo = this.add.image(this.width / 2, this.height / 6, 'titulo').setOrigin(0.5);
+        this.boton = this.add.image(this.width / 2, this.height / 1.75, 'boton').setInteractive().setScale(0.5);
+        this.boton.on('pointerdown', () => this.scene.start('Mundo1', { vida: 5, puntos: 0 }));
+    }
+
 }

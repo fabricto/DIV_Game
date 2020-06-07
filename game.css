@@ -1,3 +1,46 @@
-body{
-background-color: #006600;
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body {
+    background: linear-gradient(to bottom, #0000FF, #FF00FF);
+}
+
+div#contenedor {
+    width: 100%;
+}
+
+div.contenido {
+    height: 704px;
+    width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -0.5em;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.information,
+.controlls,
+.about {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    text-align: center;
+    color: white;
+    background-color: #1b428b;
+    border-radius: 10px;
 }

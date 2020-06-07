@@ -12,25 +12,24 @@ export default class VirtualGuy extends Phaser.Physics.Arcade.Sprite {
         this.playerSpeedWall = 1200;
         this.playerJumpWall = 275;
         this.timeJump = 500;
-        this.score = 0;
         this.timeSoundWalk = 3;
         this.soundWalk = true;
         this.isWalk = false;
     }
 
-    update(time, cursor, onWall, jump, walk) {
+    update(time, cursor, onWall, jump) {
 
         this.setDefaultValues(onWall);
         var blockedLeft = this.body.blocked.left;
         var blockedRight = this.body.blocked.right;
         var canJump = (time - this.playerLastJumped) > this.timeJump;
 
+        // Controles
         if (cursor.right.isDown) {
             this.setVelocityX(this.playerSpeed);
             this.flipX = false;
             this.anims.play('guy_run', true);
             if (this.soundWalk && this.body.onFloor()) {
-                walk.play();
                 this.soundWalk = false;
                 this.isWalk = true;
                 this.timeSoundWalk = 0;
@@ -42,7 +41,6 @@ export default class VirtualGuy extends Phaser.Physics.Arcade.Sprite {
             this.flipX = true;
             this.anims.play('guy_run', true);
             if (this.soundWalk && this.body.onFloor()) {
-                walk.play();
                 this.soundWalk = false;
                 this.isWalk = true;
                 this.timeSoundWalk = 0;

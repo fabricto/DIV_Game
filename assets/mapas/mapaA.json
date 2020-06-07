@@ -4,7 +4,7 @@
      "export":
         {
          "format":"json",
-         "target":"dinoprueba\/PRUEBASDIV\/assets\/mapas\/mapaA.json"
+         "target":"mapaA.json"
         }
     },
  "height":44,
@@ -37,66 +37,66 @@
         {
          "draworder":"topdown",
          "id":5,
-         "name":"frutas",
+         "name":"monedas",
          "objects":[
                 {
                  "height":0,
                  "id":7,
-                 "name":"fruta",
+                 "name":"moneda",
                  "point":true,
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":697.334,
+                 "x":687.334,
                  "y":453.333
                 }, 
                 {
                  "height":0,
                  "id":8,
-                 "name":"fruta",
+                 "name":"moneda",
                  "point":true,
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":698.667,
+                 "x":688.667,
                  "y":326.667
                 }, 
                 {
                  "height":0,
                  "id":9,
-                 "name":"fruta",
+                 "name":"moneda",
                  "point":true,
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":596,
+                 "x":580,
                  "y":342.667
                 }, 
                 {
                  "height":0,
                  "id":10,
-                 "name":"fruta",
+                 "name":"moneda",
                  "point":true,
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":596,
+                 "x":580,
                  "y":213.333
                 }, 
                 {
                  "height":0,
                  "id":11,
-                 "name":"fruta",
+                 "name":"moneda",
                  "point":true,
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":978.666,
+                 "x":967.666,
                  "y":522.667
                 }],
          "opacity":1,
@@ -150,7 +150,7 @@
         {
          "columns":22,
          "firstgid":1,
-         "image":"virtualguy\/assets\/mapas\/tiles.png",
+         "image":"..\/..\/..\/..\/virtualguy\/assets\/mapas\/tiles.png",
          "imageheight":176,
          "imagewidth":352,
          "margin":0,
@@ -2342,7 +2342,7 @@
         {
          "columns":3,
          "firstgid":243,
-         "image":"virtualguy\/assets\/mapas\/fire.png",
+         "image":"..\/..\/..\/..\/virtualguy\/assets\/mapas\/fire.png",
          "imageheight":32,
          "imagewidth":48,
          "margin":0,
@@ -2410,7 +2410,7 @@
         {
          "columns":4,
          "firstgid":249,
-         "image":"virtualguy\/assets\/mapas\/spikes.png",
+         "image":"..\/..\/..\/..\/virtualguy\/assets\/mapas\/spikes.png",
          "imageheight":64,
          "imagewidth":64,
          "margin":0,

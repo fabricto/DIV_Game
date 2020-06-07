@@ -44,3 +44,42 @@ span {
     background-color: #1b428b;
     border-radius: 10px;
 }
+
+.header {
+    border: 2px solid #ccc;
+    display: flex;
+    background: #666FB0;
+    margin: 1rem;
+}
+
+.menu {
+    font-size: 35px;
+    margin-left: 300px;
+}
+
+.github {
+    height: 30px;
+    width: 30px;
+}
+
+.link {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin: .2em;
+    color: black;
+    text-decoration: none;
+    transition: height .3s linear;
+}
+
+.link:hover {
+    background: #356FA5;
+    color: white;
+    border-radius: 10%;
+}
+
+.title-game {
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin-left: 230px;
+}
